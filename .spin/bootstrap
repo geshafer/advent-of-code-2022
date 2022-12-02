@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -euo pipefail
+
+export CARGO_HOME=$HOME/.rust
+export RUSTUP_HOME=$CARGO_HOME
+export PATH=$CARGO_HOME/bin:$PATH
+
+rustup toolchain install stable
+rustup default stable
